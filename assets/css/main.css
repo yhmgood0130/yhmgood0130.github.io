@@ -1,0 +1,35 @@
+.background_image {
+  opacity: 0.3;
+  -webkit-animation-duration: 30s !important;
+  animation-duration: 30s !important;
+}
+
+.nav-font {
+  font-size: 2em !important;
+}
+
+.slide-image {
+  height: 46em;
+  width: 100%;
+}
+
+.social-logo {
+  height: 2.5em;
+  width: 2.5em;
+  margin-right: 0.9em;
+  margin-top: -0.5em;
+}
+
+.col-box {
+  margin-top: 4em;
+  height: 25em;
+}
+
+.col-image {
+  margin-top: 1em;
+}
+
+.col-detail {
+  position: absolute;
+  bottom: 0
+}
