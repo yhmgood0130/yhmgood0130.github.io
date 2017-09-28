@@ -70,11 +70,13 @@ li:last-child {
 }
 
 .main-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 150px;
   height: 150px;
   border: 8px solid #fff;
-  padding: 42px 24px;
-  font: 900 64px/50px Arial, sans-serif;
+  font: 900 64px Arial, sans-serif;
   color: #999;
 }
 
@@ -110,7 +112,7 @@ b {
 }
 
 span1 {
- display: inline-block;
+  display: inline-block;
   color: #e74c3c;
   position: relative;
   white-space: nowrap;
@@ -129,4 +131,113 @@ span1 {
 40% { top: -155px; }
 60% { top: -230px; }
 80% { top: -305px; }
+}
+
+@media (max-width: 766px) {
+  .carousel-inner {
+    overflow-y: scroll !important;
+    background-color: black;
+  }
+  .col-box:last-child {
+    margin-bottom: 2em !important;
+  }
+  .nav {
+    justify-content: center !important;
+  }
+  li:last-child {
+    margin-right: -1.2em;
+  }
+  .main-introduction {
+    font: normal 22px/50px Arial, sans-serif;
+  }
+  @keyframes move {
+    0%  { top: 0px; }
+    20% { top: -34px; }
+    40% { top: -67px; }
+    60% { top: -99px; }
+    80% { top: -133px; }
+  }
+  b {
+    margin-top: 14px !important;
+    height: 32px !important;
+  }
+  span1 {
+    margin-left: 10px;
+    margin-top: -4px;
+    line-height: 150%;
+  }
+}
+
+@media (min-width: 767px) and (max-width : 1024px) {
+  body {
+    height: 100% auto !important;
+    background-color: black;
+  }
+  .carousel-height{
+    height: 100% !important;
+    width:
+  }
+  .col-box:last-child {
+    margin-bottom: 2em !important;
+  }
+  .nav {
+    justify-content: center !important;
+    margin-bottom: 2em;
+  }
+  li:last-child {
+    margin-right: -1.2em;
+  }
+  .main-introduction {
+    font: normal 43px/40px Arial, sans-serif;
+    margin-top: 0.2em;
+  }
+  @keyframes move {
+    0%  { top: 0px; }
+    20% { top: -53px; }
+    40% { top: -103px; }
+    60% { top: -154px; }
+    80% { top: -206px; }
+  }
+  b {
+    padding-top: 12px !important;
+    height: 40px !important;
+  }
+  span1 {
+    margin-left: 10px;
+    margin-top: -14px;
+    line-height: 120%;
+  }
+  .carousel-control-next,
+  .carousel-control-prev {
+    position: fixed;
+  }
+  .main-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 220px;
+    height: 220px;
+    font: 900 86px Arial, sans-serif;
+    color: #999;
+  }
+}
+
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape) {
+  .col-box {
+    margin-top: 4em;
+    height: 32em;
+  }
+  .main-name {
+    margin-top: -0.4em;
+    width: 200px;
+    height: 200px;
+    font: 900 86px Arial, sans-serif;
+    color: #999;
+  }
+  .main-introduction {
+    margin-top: -1.4em;
+  }
 }
