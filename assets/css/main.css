@@ -85,10 +85,21 @@ li:last-child {
   font: normal 64px/50px Arial, sans-serif;
   color: #999;
 }
-p {
+.main-text {
   height: 65px;
   float: left;
   margin-right: 0.3em;
+}
+
+.resume-container {
+  display: flex;
+  justify-content: center;
+}
+
+.resume-display {
+  height: 550px;
+  width: 640px;
+  margin-top: 2em;
 }
 
 b {
