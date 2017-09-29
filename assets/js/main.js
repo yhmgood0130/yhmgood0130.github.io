@@ -1,8 +1,20 @@
+$.mobile.loading( "hide" );
 $(document).ready(function(){
   	$("#bunny").delay(50).fadeOut("slow");
+
     $('#myCarousel').carousel({
         interval: false
     });
+
+    $("#myCarousel").swiperight(function(event) {
+      event.preventDefault();
+      $(this).carousel('prev');
+      });
+     $("#myCarousel").swipeleft(function(event) {
+       event.preventDefault();
+        $(this).carousel('next');
+     });
+
     showProject();
     showCode();
 })

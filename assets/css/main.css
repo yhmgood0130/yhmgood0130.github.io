@@ -4,6 +4,14 @@
   animation-duration: 30s !important;
 }
 
+#myCarousel {
+  touch-action: none;
+}
+
+.ui-loader {
+  display: none;
+}
+
 .black {
   background-color: black;
   color: #fff;
@@ -134,18 +142,34 @@ span1 {
 }
 
 @media (max-width: 766px) {
+  body {
+    height: 100% auto !important;
+    background-color: black;
+  }
   .carousel-inner {
     overflow-y: scroll !important;
     background-color: black;
   }
+  .col-box {
+    margin: 4em 5em;
+    height: 26em;
+  }
+  .rounded-circle {
+    display: block;
+    margin: 0 auto;
+  }
   .col-box:last-child {
     margin-bottom: 2em !important;
+    height: 30em;
   }
   .nav {
     justify-content: center !important;
   }
   li:last-child {
     margin-right: -1.2em;
+  }
+  .main-text {
+    margin-top: 3px;
   }
   .main-introduction {
     font: normal 22px/50px Arial, sans-serif;
@@ -162,9 +186,20 @@ span1 {
     height: 32px !important;
   }
   span1 {
-    margin-left: 10px;
-    margin-top: -4px;
+    margin-top: -2px;
     line-height: 150%;
+  }
+}
+
+@media (max-width: 375px) {
+  .col-box {
+    height: 30em;
+  }
+  .col-box:nth-child(2) {
+    height: 26em;
+  }
+  .col-box:last-child {
+    height: 34em;
   }
 }
 
@@ -176,6 +211,9 @@ span1 {
   .carousel-height{
     height: 100% !important;
     width:
+  }
+  .col-box {
+    margin: 0 5em;
   }
   .col-box:last-child {
     margin-bottom: 2em !important;
@@ -220,6 +258,10 @@ span1 {
     font: 900 86px Arial, sans-serif;
     color: #999;
   }
+  .resume-display {
+    height: 300px;
+    width: 150px;
+  }
 }
 
 @media only screen
@@ -227,7 +269,7 @@ and (min-device-width : 768px)
 and (max-device-width : 1024px)
 and (orientation : landscape) {
   .col-box {
-    margin-top: 4em;
+    margin: 4em 0 0 0;
     height: 32em;
   }
   .main-name {
@@ -239,5 +281,9 @@ and (orientation : landscape) {
   }
   .main-introduction {
     margin-top: -1.4em;
+  }
+  .resume-display {
+    -webkit-overflow-scrolling: touch;
+    overflow: auto;
   }
 }
