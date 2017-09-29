@@ -146,6 +146,9 @@ span1 {
     height: 100% auto !important;
     background-color: black;
   }
+  .header-style {
+    margin-top:0.5em;
+  }
   .carousel-inner {
     overflow-y: scroll !important;
     background-color: black;
