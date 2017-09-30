@@ -17,6 +17,10 @@
   color: #fff;
 }
 
+.ui-page {
+  background-color: black;
+}
+
 .carousel-height {
   height: 42em;
 }
@@ -289,4 +293,59 @@ and (orientation : landscape) {
     -webkit-overflow-scrolling: touch;
     overflow: auto;
   }
+}
+@media (min-width: 1441px) {
+
+  .main-container {
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+  .main-name {
+    margin-top: -0.4em;
+    width: 250px;
+    height: 250px;
+    font: 900 96px Arial, sans-serif;
+    color: #999;
+  }
+  .main-introduction {
+    font: normal 76px/70px Arial, sans-serif;
+    margin-top: 0.2em;
+  }
+  @keyframes move {
+    0%  { top: 0px; }
+    20% { top: -92px; }
+    40% { top: -183px; }
+    60% { top: -274px; }
+    80% { top: -364px; }
+  }
+  b {
+    padding-top: 12px !important;
+    height: 96px !important;
+  }
+  span1 {
+    margin-left: 10px;
+    margin-top: -19px;
+    line-height: 120%;
+  }
+  .main-text {
+    height: 76px;
+    font-size: 76px;
+  }
+  .carousel-control-next,
+  .carousel-control-prev {
+    position: fixed;
+  }
+  .card-header {
+    margin-bottom: 4em;
+  }
+  .col-box {
+    margin: 0 2em;
+  }
+  .resume-display {
+    height: 50em;
+  }
+  .carousel-inner {
+    height: 60em;
+  }
+
 }
