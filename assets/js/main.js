@@ -36,5 +36,7 @@ function showCode(id) {
     window.open("https://github.com/yhmgood0130/full-stack-web-client");
   } else if(id === 'reads'){
     window.open("https://github.com/yhmgood0130/galvanize-reads-client-side");
+  } else if(id === 'raspberrypi'){
+    window.open("https://github.com/KCN8/Raspberry-Pint/tree/production");
   }
 }

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title></title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="icon" type="image/png" href="./assets/images/favicon.ico" sizes="32x32" />
     <link href="./assets/css/main.css" rel="stylesheet">
   </head>
   <body>
@@ -49,23 +50,29 @@
           <div class="container justify-content-end">
             <h1 class="header-style card-header">Projects</h1>
             <div class="row justify-content-center">
-              <div class="col-lg-3 col-box">
+              <div class="col-lg-5 col-box">
                 <img class="rounded-circle" src="./assets/images/genie-logo.png" alt="Generic placeholder image" width="140" height="140">
                 <h2 class="col-image">Football Genie</h2>
-                <p>Football Genie project helps users to save their time for searching and having easy access to the detail of soccer leagues, players and teams.</p>
+                <p>Football Genie project helps user to save their time for searching and having easy access to the detail of soccer leagues, players and teams.</p>
                 <p><button type="button" class="btn btn-secondary col-detail" role="button" data-toggle="modal" data-target="#cardModal1"> View details » </button></p>
               </div><!-- /.col-lg-4 -->
-              <div class="col-lg-3 card-set col-box">
+              <div class="col-lg-5 card-set col-box">
                 <img class="rounded-circle" src="./assets/images/gamerz-logo.png" alt="Generic placeholder image" width="140" height="140">
                 <h2 class="col-image">Gamer'z</h2>
                 <p>A place where you can check how much your game title is worth to sell. You can search the game titles by searching it by name or platform. </p>
                 <p><button type="button" class="btn btn-secondary col-detail" role="button" data-toggle="modal" data-target="#cardModal2"> View details » </button></p>
               </div><!-- /.col-lg-4 -->
-              <div class="col-lg-3  col-box">
+              <div class="col-lg-5  col-box">
                 <img class="rounded-circle" src="./assets/images/reads-logo.png" alt="Generic placeholder image" width="140" height="140">
                 <h2 class="col-image">Good Readers</h2>
-                <p>GoodReaders is a book catalog service that stores a list of recommended books and authors that the user can search by author or book. The user can also add, edit or delete either book or author.</p>
+                <p>Good Readers is a book catalog service that stores a list of recommended books and authors that the user can search by author or book. The user can also add, edit or delete either a book or an author.</p>
                 <p><button type="button" class="btn btn-secondary col-detail" role="button" data-toggle="modal" data-target="#cardModal3"> View details » </button></p>
+              </div><!-- /.col-lg-4 -->
+              <div class="col-lg-5  col-box">
+                <img class="rounded-circle" src="./assets/images/Raspberry_PInt.png" alt="Generic placeholder image" width="140" height="140">
+                <h2 class="col-image">Raspberry Pint</h2>
+                <p>A mobile app that monitors the level of your keg, temperature, and will show details of the beer you're drinking. With just a click you can also see what the temperature of you keg is at as well as how full your keg is.</p>
+                <p><button type="button" class="btn btn-secondary col-detail" role="button" data-toggle="modal" data-target="#cardModal4"> View details » </button></p>
               </div><!-- /.col-lg-4 -->
             </div><!-- /.row -->
           </div>
@@ -79,11 +86,11 @@
         </div>
       </div>
       <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="carousel-control-prev-icon icon-fixed" aria-hidden="true"></span>
         <span class="sr-only">Previous</span>
       </a>
       <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="carousel-control-next-icon icon-fixed" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
       </a>
     </div>
@@ -141,14 +148,14 @@
       <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="cardModalLabel3">Good Reads</h5>
+            <h5 class="modal-title" id="cardModalLabel3">Good Readers</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
           <div class="modal-body">
             <h3>Description</h3>
-            <p>Galvanize Reads is a book catalog service that stores a list of recommended books and authors that the user can search by author or book. The user can also add, edit or delete either book or author.</p>
+            <p>Galvanize Readers is a book catalog service that stores a list of recommended books and authors that the user can search by author or book. The user can also add, edit or delete either book or author.</p>
             <h3>Front end</h3>
             <p>CSS, HTML, Javascript, jQuery, AJAX, Materialize, Firebase</p>
             <h3>Back end</h3>
@@ -157,6 +164,30 @@
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" id="reads" onclick="showProject(this.id)">See Project</button>
             <button type="button" class="btn btn-secondary mr-auto" id="reads" onclick="showCode(this.id)">See Code</button>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="cardModal4" tabindex="-1" role="dialog" aria-labelledby="cardModalLabel4" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="cardModalLabel4">Raspberry Pint</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <h3>Description</h3>
+            <p>A mobile app that monitors the level of your keg, temperature, and will show details of the beer you're drinking. With just a click you can also see what the temperature of you keg is at as well as how full your keg is.</p>
+            <h3>Hardware</h3>
+            <p>Raspberry pi, Flow Meter, Thermometer</p>
+            <h3>Software</h3>
+            <p>JavaScript, Node.js, React Native, NativeBase, Knex.js, Heroku, Expo</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary mr-auto" id="raspberrypi" onclick="showCode(this.id)">See Code</button>
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
           </div>
         </div>
