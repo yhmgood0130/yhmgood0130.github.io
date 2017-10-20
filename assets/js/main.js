@@ -33,7 +33,7 @@ function showCode(id) {
   if(id === 'genie'){
     window.open("https://github.com/yhmgood0130/Football-Genie");
   } else if(id === 'gamerz'){
-    window.open("https://github.com/yhmgood0130/full-stack-web-client");
+    window.open("https://github.com/yhmgood0130/Gamer-z");
   } else if(id === 'reads'){
     window.open("https://github.com/yhmgood0130/galvanize-reads-client-side");
   } else if(id === 'raspberrypi'){
