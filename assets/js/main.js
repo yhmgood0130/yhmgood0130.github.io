@@ -20,23 +20,35 @@ $(document).ready(function(){
 })
 
 function showProject(id) {
-  if(id === 'genie'){
-    window.open("https://football-genie.firebaseapp.com");
-  } else if(id === 'gamerz'){
-    window.open("https://gamerz-79621.firebaseapp.com/");
-  } else if(id === 'reads'){
-    window.open("https://galvanize-reads-ec524.firebaseapp.com/");
+  switch(id){
+    case 'genie':
+      window.open("https://football-genie.firebaseapp.com");
+      break;
+    case 'gamerz':
+      window.open("https://gamerz-79621.firebaseapp.com/");
+      break;
+    case 'reads':
+      window.open("https://galvanize-reads-ec524.firebaseapp.com/");
+      break;
   }
 }
 
 function showCode(id) {
-  if(id === 'genie'){
+  switch(id){
+  case 'genie':
     window.open("https://github.com/yhmgood0130/Football-Genie");
-  } else if(id === 'gamerz'){
+    break;
+  case 'gamerz':
     window.open("https://github.com/yhmgood0130/Gamer-z");
-  } else if(id === 'reads'){
+    break;
+  case 'reads':
     window.open("https://github.com/yhmgood0130/galvanize-reads-client-side");
-  } else if(id === 'raspberrypi'){
+    break;
+  case 'raspberrypi':
     window.open("https://github.com/KCN8/Raspberry-Pint/tree/production");
+    break;
+  case 'duck':
+    window.open("https://github.com/yhmgood0130/kaffeduck-client-side");
+    break;
   }
 }
