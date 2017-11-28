@@ -357,6 +357,8 @@ and (orientation : landscape) {
   }
   .carousel-inner {
     height: 60em;
+    overflow-y: scroll !important;
+    background-color: black;
   }
 
 }
