@@ -60,7 +60,10 @@
 .social-logo {
   height: 2.5em;
   width: 2.5em;
-  margin: 1em 1em 1em 0;
+  margin: 1em 0em 1em 1em;
+}
+li:first-child{
+  margin-left: 1em;
 }
 li:last-child {
   margin-right: 2em;
@@ -305,6 +308,11 @@ and (orientation : landscape) {
   .icon-fixed {
     position: absolute;
     top: 33em;
+  }
+
+  .social-logo { }
+  li:first-child{
+    margin-left: 1.5em;
   }
 
   .main-container {
