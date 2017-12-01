@@ -30,6 +30,9 @@ function showProject(id) {
     case 'reads':
       window.open("https://galvanize-reads-ec524.firebaseapp.com/");
       break;
+    case 'globalMap':
+      window.open("https://ihme-obese-data-visualiz-edfe2.firebaseapp.com/");
+      break;
   }
 }
 
@@ -49,6 +52,9 @@ function showCode(id) {
     break;
   case 'duck':
     window.open("https://github.com/yhmgood0130/kaffeduck-client-side");
+    break;
+  case 'globalMap':
+    window.open("https://github.com/yhmgood0130/global-map-visualization-with-D3");
     break;
   }
 }
