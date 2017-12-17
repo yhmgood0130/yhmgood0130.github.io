@@ -312,7 +312,7 @@ and (orientation : landscape) {
 
   .social-logo { }
   li:first-child{
-    margin-left: 1.5em;
+    margin-left: 0.6em;
   }
 
   .main-container {

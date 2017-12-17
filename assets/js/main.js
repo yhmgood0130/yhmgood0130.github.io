@@ -56,5 +56,8 @@ function showCode(id) {
   case 'globalMap':
     window.open("https://github.com/yhmgood0130/global-map-visualization-with-D3");
     break;
+  case 'jersey':
+    window.open("https://github.com/yhmgood0130/soccerjersey-server-with-java-spring-framework");
+    break;
   }
 }
